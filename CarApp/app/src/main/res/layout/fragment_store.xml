@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_color_two">
+
+    <com.corelibrary.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/store"
+        app:righticon="@drawable/shop_map"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dd_dimen_20px"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <RadioButton
+                android:id="@+id/rb_all"
+                style="@style/frame_query_tab"
+                android:text="@string/all"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_conversation_center"
+                style="@style/frame_query_tab"
+                android:text="@string/conversation_center"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_repair_center"
+                style="@style/frame_query_tab"
+                android:text="@string/repair_center"
+                />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.goodoil.aft.view.store.StoreListView
+                android:id="@+id/rv_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.goodoil.aft.view.store.StoreListView
+                android:id="@+id/rv_conversation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.goodoil.aft.view.store.StoreListView
+                android:id="@+id/rv_repair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.corelibrary.widget.WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_order"/>
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_88px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/font_color_four"
+            android:textSize="@dimen/font_size_three"
+            android:gravity="center"
+            android:text="@string/order_store"
+            android:background="@color/web_order"/>
+
+        <TextView
+            android:id="@+id/tv_conversation_query"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/font_color_four"
+            android:textSize="@dimen/font_size_three"
+            android:gravity="center"
+            android:text="@string/conversation_query"
+            android:background="@color/font_color_three"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

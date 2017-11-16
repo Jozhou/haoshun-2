@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.corelibrary.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/frame_num_query"
+        app:lefticon="@drawable/btn_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/font_color_two">
+
+        <EditText
+            android:id="@+id/et_frame_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_96px"
+            android:hint="@string/hint_input_frame_num"
+            android:background="@drawable/bg_et_frame"
+            android:textSize="@dimen/font_size_three"
+            android:textColor="@color/font_color_one"
+            android:textColorHint="@color/font_color_five"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:text="WDBRF52JX6F807431"/>
+
+        <Button
+            android:id="@+id/btn_query"
+            style="@style/btn_style"
+            android:text="@string/query"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_below="@id/et_frame_num"
+            android:layout_marginTop="@dimen/dd_dimen_120px"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

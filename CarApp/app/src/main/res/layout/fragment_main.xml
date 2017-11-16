@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_96px"
+        android:background="@color/bg_title" >
+
+        <ImageView
+            android:id="@+id/titlebar_lefticon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titlebar_lefttext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_three"
+            android:textColor="@color/font_color_four"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:drawablePadding="@dimen/dd_dimen_10px"
+            android:text="天津市" />
+
+        <TextView
+            android:id="@+id/titlebar_title"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/font_size_one"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/titlebar_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/titlebar_righticon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:src="@drawable/icon_share" />
+
+        <TextView
+            android:id="@+id/titlebar_righttext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_one"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.goodoil.aft.view.news.LatestNewsListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/font_color_two"></com.goodoil.aft.view.news.LatestNewsListView>
+
+</LinearLayout>

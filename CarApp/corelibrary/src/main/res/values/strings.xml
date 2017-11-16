@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CoreLibrary</string>
+
+    <!-- 网络请求 -->
+    <string name="error_network_tip">未连接到互联网，请检查网络配置。</string>
+    <string name="network_response_error">您的网络状况不好，请稍后再试</string>
+    <string name="server_response_error">服务器返回错误，错误code:%1$s</string>
+    <string name="decrpt_response_error">解密服务器返回数据失败</string>
+    <string name="handlesucc_response_error">处理服务器返回数据失败</string>
+    <string name="handleerror_response_error">网络请求过程发生异常</string>
+    <!-- 网络请求 -->
+
+    <!-- 对话框 -->
+    <string name="action_ok">确定</string>
+    <string name="action_cancel">取消</string>
+    <!-- 对话框 -->
+
+</resources>

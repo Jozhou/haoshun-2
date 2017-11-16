@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/v_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_transparent"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dd_dimen_20px"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_one"
+                style="@style/tv_pop_confirm"
+                android:background="@drawable/bg_top_oval"
+                android:text="@string/take_photo"/>
+
+            <View
+                android:layout_width="match_parent"
+                style="@style/line_hor1"
+                />
+
+            <TextView
+                android:id="@+id/tv_two"
+                style="@style/tv_pop_confirm"
+                android:background="@drawable/bg_bottom_oval"
+                android:text="@string/local_pic"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/tv_pop_confirm"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:background="@drawable/bg_white_oval"
+            android:layout_marginTop="@dimen/dd_dimen_10px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

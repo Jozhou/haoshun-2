@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_transparent"
+    android:id="@+id/v_content">
+    
+    <!-- Content layout -->
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:minWidth="@dimen/dd_dimen_300px"
+        android:minHeight="@dimen/dd_dimen_300px"
+        android:src="@drawable/placeholder_square"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

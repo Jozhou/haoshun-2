@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+    <!-- 一号颜色 -->
+    <color name="font_color_one">#000000</color>
+    <!-- 二号颜色 -->
+    <color name="font_color_two">#f6f6f6</color>
+    <!-- 三号颜色 -->
+    <color name="font_color_three">#000177</color>
+    <!-- 四号颜色 -->
+    <color name="font_color_four">#ffffff</color>
+    <!-- 五号颜色 -->
+    <color name="font_color_five">#9d9d9d</color>
+
+    <color name="line_mine_item">#dfdfdf</color>
+
+    <!-- 线条颜色 -->
+    <color name="line_color1">@color/font_color_two</color>
+    <color name="line_color2">@color/font_color_five</color>
+
+    <color name="bg_title">@color/font_color_three</color>
+    
+    <color name="bg_transparent">#50000000</color>
+    <color name="web_order">#32338d</color>
+
+</resources>

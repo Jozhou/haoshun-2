@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/font_color_two">
+
+    <com.corelibrary.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lefticon="@drawable/btn_back"
+        app:title="@string/register" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dd_dimen_40px"
+                android:layout_marginTop="@dimen/dd_dimen_50px"
+                android:src="@drawable/icon_head"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/ll_tel"
+                style="@style/layout_input">
+
+                <TextView
+                    style="@style/tv_input_name"
+                    android:text="@string/tel_number"
+                    android:textColor="@color/font_color_one" />
+
+                <EditText
+                    android:id="@+id/et_tel"
+                    style="@style/tv_sel_vehicle"
+                    android:hint="@string/hint_input_tel"
+                    android:inputType="number"
+                    android:maxLength="11"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line_hor1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_tel" />
+
+            <LinearLayout
+                android:id="@+id/ll_verify_code"
+                style="@style/layout_input">
+
+                <TextView
+                    style="@style/tv_input_name"
+                    android:text="@string/verify_code" />
+
+                <EditText
+                    android:id="@+id/et_verify_code"
+                    style="@style/tv_sel_vehicle"
+                    android:hint="@string/hint_input_verify_code"
+                    android:inputType="number"
+                    android:maxLength="8"/>
+
+                <TextView
+                    android:id="@+id/tv_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/get_verify_code"
+                    android:textColor="@color/font_color_three"
+                    android:textSize="@dimen/font_size_four" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_hor1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_tel" />
+
+            <LinearLayout
+                android:id="@+id/ll_psw"
+                style="@style/layout_input">
+
+                <TextView
+                    style="@style/tv_input_name"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:id="@+id/et_psw"
+                    style="@style/tv_sel_vehicle"
+                    android:hint="@string/hint_input_psw"
+                    android:maxLength="19"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line_hor1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_tel" />
+
+            <LinearLayout
+                style="@style/layout_input">
+
+                <TextView
+                    style="@style/tv_input_name"
+                    android:layout_width="wrap_content"
+                    android:text="@string/confirm_pwd" />
+
+                <EditText
+                    android:id="@+id/et_confirm_psw"
+                    style="@style/tv_sel_vehicle"
+                    android:hint="@string/hint_input_confirm_pwd"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:maxLength="19"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line_hor1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_tel" />
+
+            <LinearLayout
+                style="@style/layout_input"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dd_dimen_96px">
+
+                <TextView
+                    style="@style/tv_input_name"
+                    android:text="@string/vehicle_info" />
+
+                <TextView
+                    android:id="@+id/tv_vehicle"
+                    style="@style/tv_sel_vehicle"
+                    android:hint="@string/sel_vehicle"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dd_dimen_96px"
+                    android:paddingTop="@dimen/dd_dimen_20px"
+                    android:paddingBottom="@dimen/dd_dimen_20px"
+                    android:singleLine="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dd_dimen_30px">
+
+                <TextView
+                    android:id="@+id/tv_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agreement_register"
+                    android:textColor="@color/font_color_five"
+                    android:textSize="@dimen/font_size_four" />
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    style="@style/btn_style"
+                    android:layout_marginTop="@dimen/dd_dimen_30px"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

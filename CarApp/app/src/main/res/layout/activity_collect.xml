@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_color_two">
+
+    <com.corelibrary.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/my_collect"
+        app:lefticon="@drawable/btn_back"/>
+
+    <com.corelibrary.widget.PagerSlidingTabStrip
+        android:id="@+id/pst_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_88px"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:pstsDivider="false"
+        app:pstsIndicatorColor="@color/font_color_three"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="0dp"
+        app:pstsTabSelectTextColor="@color/font_color_one"
+        app:pstsTabTextColor="@color/font_color_five"
+        app:pststabTextSize="@dimen/font_size_three"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

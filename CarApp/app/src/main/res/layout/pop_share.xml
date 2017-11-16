@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/v_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_transparent"/>
+
+    <LinearLayout
+        android:id="@+id/v_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dd_dimen_30px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/font_color_four">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color_three"
+            android:textSize="@dimen/font_size_three"
+            android:text="@string/share_to"/>
+
+        <View
+            android:layout_width="match_parent"
+            style="@style/line_hor4"
+            android:layout_marginTop="@dimen/dd_dimen_20px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dd_dimen_40px">
+
+            <TextView
+                android:id="@+id/tv_qq"
+                style="@style/pop_share_txt"
+                android:text="@string/share_to_qq"
+                android:drawableTop="@drawable/inviteqqimage"/>
+
+            <TextView
+                android:id="@+id/tv_wx"
+                style="@style/pop_share_txt"
+                android:text="@string/share_to_wx"
+                android:drawableTop="@drawable/inviteweixinimage"
+                android:layout_marginLeft="@dimen/dd_dimen_60px"/>
+
+            <TextView
+                android:id="@+id/tv_fri"
+                style="@style/pop_share_txt"
+                android:text="@string/share_to_fri"
+                android:drawableTop="@drawable/invitepycircleimage"
+                android:layout_marginLeft="60px"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

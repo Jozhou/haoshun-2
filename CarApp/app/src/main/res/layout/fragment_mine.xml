@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/font_color_three"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingBottom="@dimen/dd_dimen_50px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_96px"
+            android:text="@string/personal_center"
+            android:textColor="@color/font_color_four"
+            android:textSize="@dimen/font_size_one"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dd_dimen_30px">
+            <com.corelibrary.view.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dd_dimen_140px"
+                android:layout_height="@dimen/dd_dimen_140px"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户昵称"
+                    android:textColor="@color/font_color_four"
+                    android:textSize="@dimen/font_size_three"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"/>
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1231231231233"
+                    android:textColor="@color/font_color_four"
+                    android:textSize="@dimen/font_size_three"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/dd_dimen_20px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_conversation_query"
+        style="@style/mine_ll_item"
+        android:layout_marginTop="@dimen/dd_dimen_60px"
+        android:visibility="gone">
+        <TextView
+            style="@style/mine_ll_item_txt"
+            android:text="@string/conversation_record_query"
+            android:drawableLeft="@drawable/me_shangchengdingdan"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arror_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_coll"
+        style="@style/mine_ll_item"
+        android:layout_marginTop="@dimen/dd_dimen_30px">
+        <TextView
+            style="@style/mine_ll_item_txt"
+            android:text="@string/my_collect"
+            android:drawableLeft="@drawable/me_wodeshoucang"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arror_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_settings"
+        style="@style/mine_ll_item"
+        android:layout_marginTop="@dimen/dd_dimen_30px">
+        <TextView
+            style="@style/mine_ll_item_txt"
+            android:text="@string/settings"
+            android:drawableLeft="@drawable/me_shezhi"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arror_right"/>
+    </LinearLayout>
+
+</LinearLayout>

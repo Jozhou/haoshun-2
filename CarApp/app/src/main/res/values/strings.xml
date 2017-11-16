@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">好顺</string>
+
+    <!-- 个人 start -->
+    <string name="login">登&#160;&#160;录</string>
+    <string name="title_login">登录</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="no_account_register">无账号请注册</string>
+    <string name="forget_psw">忘记密码</string>
+    <string name="third_login">第三方登录</string>
+    <string name="hint_input_account">请输入账号</string>
+    <string name="hint_input_psw">请输入密码</string>
+    <string name="tip_login_tel">注：普通用户需要手机号注册，修理厂需要系统分配的账号登录</string>
+    <string name="login_fail">登陆失败</string>
+    <string name="tip_input_name_psw">请输入账号和密码</string>
+
+    <string name="register">注册</string>
+    <string name="tel_number">手机号</string>
+    <string name="verify_code">验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="hint_input_tel">请输入手机号</string>
+    <string name="hint_input_verify_code">请输入验证码</string>
+    <string name="agreement_register">注册即表示同意《好顺自动变速箱油注册协议》</string>
+    <string name="confirm">确&#160;&#160;认</string>
+    <string name="confirm_pwd">确认密码</string>
+    <string name="hint_input_confirm_pwd">请再次输入密码</string>%1$s
+    <string name="show_vehicle">%1$s,%2$s,%3$s,%4$s</string>
+    <string name="show_vehicle2">%1$s/%2$s/%3$s/%4$s</string>
+    <string name="vehicle_info">车辆</string>
+    <string name="sel_vehicle">请选择车辆</string>
+    <string name="brand_id">车牌</string>
+    <string name="sel_brand_id">请选择车牌</string>
+    <string name="series_id">车系</string>
+    <string name="sel_series_id">请选择车系</string>
+    <string name="year_style">年款</string>
+    <string name="sel_year_style">请选择年款</string>
+    <string name="version">版本</string>
+    <string name="sel_version">请选择版本</string>
+    <string name="error_tel_format">手机号格式不正确</string>
+    <string name="error_psw_format">密码格式不正确</string>
+    <string name="error_psw_not_equal">两次密码输入不一致</string>
+    <string name="send_succ">发送成功</string>
+    <string name="send_fail">发送失败</string>
+    <string name="verify_code_fial">短信验证码不正确</string>
+
+
+    <string name="modify_psw">修改密码</string>
+    <string name="user_name">用户名</string>
+    <string name="hint_input_username">请输入用户名</string>
+    <string name="hint_input_new_psw">请输入新的密码</string>
+    <string name="hint_re_input_new_psw">请再次输入新的密码</string>
+    <string name="save">保&#160;&#160;存</string>
+
+    <string name="personal_info">个人资料</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="bind_tel">绑定手机</string>
+
+    <string name="register_succ">注册成功</string>
+    <string name="click_again_exit">再按一次退出程序</string>
+
+    <!-- 个人 end -->
+
+    <!-- 主页 start -->
+    <string name="home">首页</string>
+    <string name="news">资讯</string>
+    <string name="store">门店</string>
+    <string name="mine">我的</string>
+    <string name="conservation_knowledge">养护知识</string>
+    <string name="conservation_query">养护查询</string>
+    <string name="oil_change_book">换油宝典</string>
+    <string name="frame_num_query">车架号查询</string>
+    <string name="pro_inro">项目介绍</string>
+    <string name="latest_news">最新资讯</string>
+    <string name="func_nav">功能导航</string>
+    <!-- 主页 end -->
+
+    <!--车架号查询 start -->
+    <string name="query">查&#160;&#160;询</string>
+    <string name="hint_input_frame_num">请输入17位车架号</string>
+    <string name="query_detail">查询详情</string>
+    <string name="configuration">配置</string>
+    <string name="oem_parts">OME件</string>
+    <string name="conversation_parts">养护件</string>
+    <string name="tip_query">车架号查询仅供参考，具体查询以养护查询为准</string>
+    <string name="hint_input_error_report">请输入错误反馈</string>
+    <string name="submit">提&#160;&#160;交</string>
+
+    <!--车架号查询 end -->
+
+    <!-- 个人中心 start-->
+    <string name="personal_center">个人中心</string>
+    <string name="conversation_record_query">养护/维修记录查询</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="settings">设置</string>
+    <string name="modify_nick">修改昵称</string>
+    <string name="hint_input_nickname">请输入昵称</string>
+    <string name="modify_tel">修改手机</string>
+
+    <string name="take_photo">拍照</string>
+    <string name="local_pic">本地图片</string>
+    <string name="cancel">取消</string>
+
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="other">其他</string>
+
+    <!-- 个人中心 end-->
+
+    <!-- 个人车辆 start-->
+    <string name="title_sel_brand">车牌选择</string>
+    <string name="title_sel_series">车系选择</string>
+    <string name="title_sel_year_style">年款选择</string>
+    <string name="title_sel_version">版本选择</string>
+
+    <!-- 个人车辆 end-->
+
+    <!-- 设置 start-->
+    <string name="logout">退出登录</string>
+    <string name="feedback">意见反馈</string>
+    <string name="service_term">服务条款</string>
+    <string name="about_us">关于我们</string>
+
+    <!-- 设置 end-->
+
+
+    <!-- 门店 start-->
+    <string name="all">全部</string>
+    <string name="conversation_center">养护中心</string>
+    <string name="repair_center">维修中心</string>
+    <string name="address">地址：$s</string>
+    <string name="order_store">预约到店</string>
+    <string name="map">地图</string>
+    <string name="store_detail">门店详情</string>
+    <!-- 门店 end-->
+
+
+    <!-- 养护查询 start-->
+    <string name="conversation_query">养护查询</string>
+    <string name="click_clear">一键清空</string>
+    <string name="add">添加</string>
+    <string name="toast_sel_vehicle">请选择车辆</string>
+    <string name="oil_model">油品型号</string>
+    <!-- 养护查询 end-->
+
+    <!-- 换油宝典 start-->
+    <!-- 换油宝典 end-->
+
+    <!-- 地图相关 start -->
+    <string name="sel_city">选择城市</string>
+    <string name="location_response_error">定位失败，请稍后再试</string>
+    <string name="location_fail">定位失败</string>
+    <string name="tip_install_map">请安装高德或百度地图</string>
+    <string name="gaode_nav">高德导航</string>
+    <string name="baidu_nav">百度导航</string>
+    <string name="addr_error">位置信息异常</string>
+    <!-- 地图相关 end -->
+
+    <!-- 资讯相关 start -->
+    <string name="click_praise">点击收藏</string>
+    <string name="news_detail">资讯详情</string>
+    <!-- 资讯相关 end -->
+
+    <!-- 分享 start -->
+    <string name="share_to">分享到</string>
+    <string name="share_to_qq">QQ</string>
+    <string name="share_to_wx">微信好友</string>
+    <string name="share_to_fri">朋友圈</string>
+    <string name="share_succ">分享成功</string>
+    <string name="share_fail">分享失败</string>
+    <!-- 分享 end -->
+
+</resources>

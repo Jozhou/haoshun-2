@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/dd_dimen_180px"
+    android:paddingTop="@dimen/dd_dimen_10px"
+    android:paddingBottom="@dimen/dd_dimen_10px"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_30px"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="@dimen/dd_dimen_240px"
+        android:layout_height="@dimen/dd_dimen_160px"
+        android:src="@drawable/bg_frame_num"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:layout_toRightOf="@id/iv_news"
+        android:textColor="@color/font_color_one"
+        android:textSize="@dimen/font_size_two"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="kasdjfklsdjfslkdfjklasdf"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:layout_toRightOf="@id/iv_news"
+        android:textColor="@color/font_color_five"
+        android:textSize="@dimen/font_size_four"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentBottom="true"
+        android:text="sdfjsldkfjsdklafj"/>
+
+    <TextView
+        android:id="@+id/tv_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:textColor="@color/font_color_five"
+        android:textSize="@dimen/font_size_four"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="8"
+        android:drawableLeft="@drawable/shop_weishoucang"
+        android:drawablePadding="@dimen/dd_dimen_4px"/>
+</RelativeLayout>
