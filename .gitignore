@@ -1,0 +1,16 @@
+CarApp/.gradle
+CarApp/.idea
+CarApp/.settings
+CarApp/bin
+CarApp/build
+CarApp/gen
+CarApp/gradle
+CarApp/gradlew
+CarApp/gradlew.bat
+CarApp/local.properties
+
+CarApp/corelibrary/build
+
+CarApp/app/build
+CarApp/app/app-release.apk
+CarApp/app/haoshun.apk
