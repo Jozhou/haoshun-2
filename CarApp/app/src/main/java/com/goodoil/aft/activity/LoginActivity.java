@@ -19,6 +19,8 @@ import com.corelibrary.utils.DialogUtils;
 import com.corelibrary.utils.ViewInject.ViewInject;
 import com.corelibrary.view.TitleBar;
 
+import permissions.dispatcher.RuntimePermissions;
+
 /**
  * Created by Administrator on 2017/9/28.
  */

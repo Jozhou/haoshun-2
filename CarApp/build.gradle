@@ -15,23 +15,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-    }
-}
-
-allprojects {
-    repositories {
         maven { url "https://jitpack.io" }
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-//ͳ全局环境变量设置
-ext {
-    android_compileSdkVersion = 25
-    android_buildToolsVersion = '25.0.2'
-    android_minSdkVersion = 14
-    android_targetSdkVersion = 14
 }

@@ -27,13 +27,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:25.0.0'
-    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
     compile 'com.github.anzaizai:EasyRefreshLayout:1.3.1'
     compile 'com.github.bumptech.glide:glide:3.8.0'
     compile 'me.yokeyword:indexablerecyclerview:1.3.0'
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.github.hotchemi:permissionsdispatcher:3.0.1"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
 //    lib_jsoup = 'org.jsoup:jsoup:1.10.3'
 }

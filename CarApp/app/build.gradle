@@ -58,10 +58,11 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
     compile project(':corelibrary')
     compile project(':imagepicker')
     compile(name:'SMSSDK-3.0.0',ext:'aar')
     compile(name:'SMSSDKGUI-3.0.0',ext:'aar')
+    compile "com.github.hotchemi:permissionsdispatcher:3.0.1"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
 }
