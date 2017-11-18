@@ -2,11 +2,13 @@ package com.goodoil.aft.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.bumptech.glide.Glide;
 import com.goodoil.aft.R;
 import com.goodoil.aft.activity.ActivityWeb;
 import com.goodoil.aft.activity.ConversationQuerylActivity;
@@ -21,6 +23,8 @@ import com.corelibrary.utils.ViewInject.ViewInject;
 import com.corelibrary.view.layoutview.MLinearLayout;
 import com.corelibrary.view.viewflow.CircleFlowIndicator;
 import com.corelibrary.view.viewflow.ViewFlow;
+import com.goodoil.aft.models.operater.GetQrcodeOperater;
+import com.goodoil.aft.models.operater.GetStudyOperater;
 
 import java.util.List;
 
@@ -52,6 +56,8 @@ public class MainHeaderView extends MLinearLayout {
     private View llFrameNumQuery;
     @ViewInject(value = "ll_pro_intro", setClickListener = true)
     private View llProIntro;
+    @ViewInject(value = "ll_online_study", setClickListener = true)
+    private View llOnlineStudy;
 
     public MainHeaderView(Context context) {
         super(context);
@@ -135,11 +141,30 @@ public class MainHeaderView extends MLinearLayout {
         } else if (id == R.id.ll_frame_num_query) {
             Intent intent = new Intent(mContext, FrameNumQueryActivity.class);
             mContext.startActivity(intent);
+        } else if (id == R.id.ll_online_study) {
+            Intent intent = new Intent(mContext, ActivityWeb.class);
+            intent.putExtra(IntentCode.INTENT_WEB_URL, Config.PROJECT_INTRO);
+            intent.putExtra(IntentCode.INTENT_WEB_TITLE, getResources().getString(R.string.pro_inro));
+            mContext.startActivity(intent);
         } else if (id == R.id.ll_pro_intro) {
             Intent intent = new Intent(mContext, ActivityWeb.class);
             intent.putExtra(IntentCode.INTENT_WEB_URL, Config.PROJECT_INTRO);
             intent.putExtra(IntentCode.INTENT_WEB_TITLE, getResources().getString(R.string.pro_inro));
             mContext.startActivity(intent);
         }
+    }
+
+    private void getOnLineStudy() {
+        final GetStudyOperater operater = new GetStudyOperater(mContext);
+        operater.onReq(new BaseOperater.RspListener() {
+            @Override
+            public void onRsp(boolean success, Object obj) {
+                if (success) {
+                    if (!TextUtils.isEmpty(operater.getImgurl())) {
+                    }
+                }
+
+            }
+        });
     }
 }

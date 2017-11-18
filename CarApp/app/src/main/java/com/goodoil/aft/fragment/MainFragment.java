@@ -8,12 +8,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.corelibrary.models.http.BaseOperater;
+import com.corelibrary.utils.DialogUtils;
 import com.goodoil.aft.R;
 import com.goodoil.aft.activity.ActivityWebNews;
 import com.goodoil.aft.activity.CityListActivity;
 import com.goodoil.aft.context.IntentCode;
 import com.goodoil.aft.models.entry.CityItemEntry;
 import com.goodoil.aft.models.entry.NewsEntry;
+import com.goodoil.aft.models.entry.ShareEntry;
+import com.goodoil.aft.models.operater.ShareOperater;
 import com.goodoil.aft.view.MainHeaderView;
 import com.goodoil.aft.view.news.LatestNewsListView;
 import com.goodoil.aft.view.popup.PopShare;
@@ -88,9 +92,28 @@ public class MainFragment extends BaseFragment {
             Intent intent = new Intent(mContext, CityListActivity.class);
             startActivityForResult(intent, SEL_CITY);
         } else if (id == R.id.titlebar_righticon) {
-            popShare.showAtLocation(vRoot, Gravity.BOTTOM, 0, 0);
-
+            if (ShareEntry.getInstance().isInit()) {
+                popShare.showAtLocation(vRoot, Gravity.BOTTOM, 0, 0);
+            } else {
+                getShareData();
+            }
         }
+    }
+
+    private void getShareData() {
+        final ShareOperater shareOperater = new ShareOperater(mContext);
+        shareOperater.onReq(new BaseOperater.RspListener() {
+            @Override
+            public void onRsp(boolean success, Object obj) {
+                if (success) {
+                    if (ShareEntry.getInstance().isInit()) {
+                        popShare.showAtLocation(vRoot, Gravity.BOTTOM, 0, 0);
+                    } else {
+                        DialogUtils.showToastMessage(shareOperater.getMsg());
+                    }
+                }
+            }
+        });
     }
 
     @Override

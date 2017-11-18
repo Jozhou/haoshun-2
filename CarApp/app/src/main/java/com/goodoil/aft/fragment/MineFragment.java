@@ -1,10 +1,13 @@
 package com.goodoil.aft.fragment;
 
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.corelibrary.models.http.BaseOperater;
 import com.goodoil.aft.R;
 import com.goodoil.aft.activity.CollectActivity;
 import com.goodoil.aft.activity.PersonalInfoActivity;
@@ -13,6 +16,7 @@ import com.goodoil.aft.common.data.Account;
 import com.corelibrary.fragment.base.BaseFragment;
 import com.corelibrary.utils.ViewInject.ViewInject;
 import com.corelibrary.view.CircleImageView;
+import com.goodoil.aft.models.operater.GetQrcodeOperater;
 
 /**
  * Created by Administrator on 2017/9/28.
@@ -36,6 +40,9 @@ public class MineFragment extends BaseFragment {
     @ViewInject(value = "ll_settings", setClickListener = true)
     private View vSettings;
 
+    @ViewInject(value = "iv_qrcode")
+    private ImageView ivQrcode;
+
     @Override
     protected int getContentResId() {
         return R.layout.fragment_mine;
@@ -44,6 +51,8 @@ public class MineFragment extends BaseFragment {
     @Override
     protected void onApplyData() {
         super.onApplyData();
+
+        getQucode();
     }
 
     @Override
@@ -76,5 +85,23 @@ public class MineFragment extends BaseFragment {
                 .error(R.drawable.head_icon)
                 .dontAnimate()
                 .into(ivHead);
+    }
+
+    private void getQucode() {
+        final GetQrcodeOperater operater = new GetQrcodeOperater(mContext);
+        operater.setShowLoading(false);
+        operater.onReq(new BaseOperater.RspListener() {
+            @Override
+            public void onRsp(boolean success, Object obj) {
+                if (success) {
+                    if (!TextUtils.isEmpty(operater.getPic())) {
+                        Glide.with(mContext).load(operater.getPic())
+                                .dontAnimate()
+                                .into(ivQrcode);
+                    }
+                }
+
+            }
+        });
     }
 }

@@ -119,6 +119,22 @@
             android:layout_height="match_parent"/>
 
         <LinearLayout
+            android:id="@+id/ll_online_study"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                style="@style/main_func"
+                android:text="@string/online_study"
+                android:drawableTop="@drawable/icon_online_study"/>
+        </LinearLayout>
+
+        <View
+            style="@style/line_ver1"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
             android:id="@+id/ll_pro_intro"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -130,16 +146,6 @@
                 android:drawableTop="@drawable/home_shenqinghezuo"/>
         </LinearLayout>
 
-        <View
-            style="@style/line_ver1"
-            android:layout_height="match_parent"/>
-
-        <View
-            android:id="@+id/v_empty"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </View>
     </LinearLayout>
 
     <TextView
