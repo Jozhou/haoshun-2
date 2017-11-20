@@ -13,6 +13,7 @@ import com.goodoil.aft.R;
 import com.goodoil.aft.activity.ActivityWeb;
 import com.goodoil.aft.activity.ConversationQuerylActivity;
 import com.goodoil.aft.activity.FrameNumQueryActivity;
+import com.goodoil.aft.activity.OnlineStudyActivity;
 import com.goodoil.aft.context.Config;
 import com.goodoil.aft.context.IntentCode;
 import com.goodoil.aft.models.adapter.AdAdapter;
@@ -142,9 +143,7 @@ public class MainHeaderView extends MLinearLayout {
             Intent intent = new Intent(mContext, FrameNumQueryActivity.class);
             mContext.startActivity(intent);
         } else if (id == R.id.ll_online_study) {
-            Intent intent = new Intent(mContext, ActivityWeb.class);
-            intent.putExtra(IntentCode.INTENT_WEB_URL, Config.PROJECT_INTRO);
-            intent.putExtra(IntentCode.INTENT_WEB_TITLE, getResources().getString(R.string.pro_inro));
+            Intent intent = new Intent(mContext, OnlineStudyActivity.class);
             mContext.startActivity(intent);
         } else if (id == R.id.ll_pro_intro) {
             Intent intent = new Intent(mContext, ActivityWeb.class);
@@ -154,17 +153,4 @@ public class MainHeaderView extends MLinearLayout {
         }
     }
 
-    private void getOnLineStudy() {
-        final GetStudyOperater operater = new GetStudyOperater(mContext);
-        operater.onReq(new BaseOperater.RspListener() {
-            @Override
-            public void onRsp(boolean success, Object obj) {
-                if (success) {
-                    if (!TextUtils.isEmpty(operater.getImgurl())) {
-                    }
-                }
-
-            }
-        });
-    }
 }

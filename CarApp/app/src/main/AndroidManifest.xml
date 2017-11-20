@@ -192,6 +192,10 @@
             android:name=".activity.StoreMapActivity"
             android:screenOrientation="portrait"></activity>
 
+        <activity
+            android:name=".activity.OnlineStudyActivity"
+            android:screenOrientation="portrait"></activity>
+
 
 
 
