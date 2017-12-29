@@ -70,7 +70,7 @@ public class NewsWebView extends WebView implements View.OnClickListener {
 					if (success) {
 						DialogUtils.showToastMessage(operater.getMsg());
 //						newsEntry.clickamount = newsEntry.clickamount + 1;
-						tvPraise.setText(operater.getCollectetimes());
+						tvPraise.setText(operater.getCollectetimes() + "");
 					}
 				}
 			});

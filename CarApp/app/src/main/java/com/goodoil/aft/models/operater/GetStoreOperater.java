@@ -2,6 +2,7 @@ package com.goodoil.aft.models.operater;
 
 import android.content.Context;
 
+import com.goodoil.aft.common.data.Account;
 import com.goodoil.aft.models.entry.StoreEntry;
 import com.corelibrary.models.entry.ArrayEntry;
 import com.corelibrary.models.http.BaseArrayOperater;
@@ -22,6 +23,7 @@ public class GetStoreOperater extends BaseArrayOperater<StoreEntry> {
 
     public void setParams(String userlon, String userlat, int shoptype) {
         try {
+            paramsObj.put("user_id", Account.get().user_id);
             paramsObj.put("userlon", userlon);
             paramsObj.put("userlat", userlat);
             paramsObj.put("shoptype", shoptype);

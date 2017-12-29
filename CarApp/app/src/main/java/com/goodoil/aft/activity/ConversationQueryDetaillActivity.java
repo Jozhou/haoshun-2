@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.goodoil.aft.R;
 import com.goodoil.aft.context.IntentCode;
-import com.goodoil.aft.models.adapter.FrameNumAdapter;
-import com.goodoil.aft.models.entry.NameValueEntry;
+import com.goodoil.aft.models.adapter.ConversationItemAdapter;
+import com.goodoil.aft.models.entry.ConversationDetailItem;
 import com.goodoil.aft.models.entry.VehicleQueryEntry;
 import com.goodoil.aft.models.operater.GetConversationDetailOperater;
 import com.corelibrary.activity.base.BaseActivity;
@@ -39,8 +39,8 @@ public class ConversationQueryDetaillActivity extends BaseActivity {
     @ViewInject("sv_content")
     private ScrollView scrollView;
 
-    private List<NameValueEntry> mData;
-    FrameNumAdapter mAdater;
+    private List<ConversationDetailItem> mData;
+    ConversationItemAdapter mAdater;
     private VehicleQueryEntry entry;
 
     @Override
@@ -82,7 +82,7 @@ public class ConversationQueryDetaillActivity extends BaseActivity {
             public void onRsp(boolean success, Object obj) {
                 if (success) {
                     mData = operater.getData();
-                    mAdater = new FrameNumAdapter(ConversationQueryDetaillActivity.this, mData);
+                    mAdater = new ConversationItemAdapter(ConversationQueryDetaillActivity.this, mData);
                     lvConversation.setAdapter(mAdater);
                 }
             }

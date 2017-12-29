@@ -7,8 +7,8 @@ android {
         applicationId "com.goodoil.aft"
         minSdkVersion android_minSdkVersion
         targetSdkVersion android_targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 201711231
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 

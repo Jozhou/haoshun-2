@@ -34,7 +34,7 @@ public class GetMyNewsOperater extends BaseArrayOperater<NewsEntry> {
     protected ArrayEntry<NewsEntry> parseJsonObject(JSONObject jo) {
         ArrayEntry<NewsEntry> arrayEntry = new ArrayEntry<>();
         try {
-            JSONArray array = jo.getJSONArray("content");
+            JSONArray array = jo.getJSONObject("content").getJSONArray("data");
             for (int i = 0; i < array.length(); i ++) {
                 JSONObject jsonObject = array.getJSONObject(i);
                 NewsEntry entry = new NewsEntry();

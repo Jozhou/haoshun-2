@@ -3,7 +3,6 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingLeft="@dimen/dd_dimen_30px"
-    android:paddingRight="@dimen/dd_dimen_30px"
     android:background="@color/white">
 
     <TextView
@@ -25,12 +24,20 @@
         android:gravity="center_vertical"
         android:text="value"/>
 
-    <ImageView
-        android:id="@+id/iv_arror"
+    <RelativeLayout
+        android:id="@+id/rl_arror"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_arror_right"
-        android:layout_marginLeft="@dimen/dd_dimen_4px"
-        android:layout_gravity="center_vertical"
-        android:visibility="gone"/>
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/dd_dimen_30px">
+        <ImageView
+            android:id="@+id/iv_arror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arror_right"
+            android:layout_marginLeft="@dimen/dd_dimen_4px"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
 </LinearLayout>

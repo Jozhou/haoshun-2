@@ -55,7 +55,8 @@
                 android:dividerHeight="@dimen/dd_dimen_2px"
                 android:divider="@null"
                 android:layout_marginTop="@dimen/dd_dimen_60px"
-                android:layout_below="@id/tv_carcode"/>
+                android:layout_below="@id/tv_carcode"
+                android:scrollbars="none"/>
 
         </RelativeLayout>
     </ScrollView>

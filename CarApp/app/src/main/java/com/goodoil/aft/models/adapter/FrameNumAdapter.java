@@ -65,6 +65,7 @@ public class FrameNumAdapter extends BaseAdapter {
 			holder.tvName = (TextView) convertView.findViewById(R.id.tv_name);
 			holder.tvValue = (TextView) convertView.findViewById(R.id.tv_value);
 			holder.ivArrow = (ImageView) convertView.findViewById(R.id.iv_arror);
+			holder.vArrow = convertView.findViewById(R.id.iv_arror);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -98,6 +99,7 @@ public class FrameNumAdapter extends BaseAdapter {
 		TextView tvValue;
 
 		ImageView ivArrow;
+		View vArrow;
 	}
 
 }
